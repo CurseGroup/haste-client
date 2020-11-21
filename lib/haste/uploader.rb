@@ -4,7 +4,7 @@ require 'uri'
 
 module Haste
 
-  DEFAULT_URL = 'https://copynpaste.cursehosting.fr'
+  DEFAULT_URL = 'https://paste.cursehosting.com'
 
   class Uploader
 
