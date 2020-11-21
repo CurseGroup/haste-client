@@ -42,7 +42,7 @@ haste file --raw
 
 ## Changing the location of your haste server
 
-By default, haste will point at `https://copynpaste.cursehosting.fr`.  You can change this by setting the value of `ENV['HASTE_SERVER']` to the URL of your haste server.  You can also use `alias` to make easy shortcuts if you commonly use a few hastes intermingled with each other.  To do that, you'd put something like this into ~.bash_profile:
+By default, haste will point at `https://paste.cursehosting.com`.  You can change this by setting the value of `ENV['HASTE_SERVER']` to the URL of your haste server.  You can also use `alias` to make easy shortcuts if you commonly use a few hastes intermingled with each other.  To do that, you'd put something like this into ~.bash_profile:
 
 ``` bash
 alias work_haste="HASTE_SERVER=https://something.com haste"
@@ -70,7 +70,7 @@ If you'd like an alternative on Windows that supports functionality similar to `
 Han Boetes and @nickthename have contributed a simple shell-script alternative for those not interested in installing a RubyGem:
 
 ``` bash
-haste() { a=$(cat); curl -X POST -s -d "$a" https://copynpaste.cursehosting.fr/documents | awk -F '"' '{print "https://copynpaste.cursehosting.fr/"$4}'; }
+haste() { a=$(cat); curl -X POST -s -d "$a" https://paste.cursehosting.com/documents | awk -F '"' '{print "https://paste.cursehosting.com/"$4}'; }
 ```
 
 Usage:
